@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Analizador de palabras</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="entrada">
+            <textarea id="texto" placeholder="Introduce el texto" rows="5"></textarea>
+            <button id="btnEnviar">Analizar</button>
+        </div>
+
+        <!-- Resultados numéricos -->
+        <div id="resultados">
+            <h2>Resultados:</h2>
+            <p>Número de palabras: <span id="num_palabras"></span></p>
+            <p>Número de caracteres: <span id="num_caracteres"></span></p>
+            <p>Longitud media de palabras: <span id="longitud_media"></span></p>
+            <p>Total de letras: <span id="total_letras"></span></p>
+            <p>Top 5 palabras más frecuentes: 
+                <span>
+                    <ul id="listaPalabras">
+                        <!-- Se inserta codigo desde js -->
+                    </ul>
+                </span>
+            </p>
+        </div>
+
+        <!-- Gráficas -->
+        <div id="graficas" style="margin-top: 30px;">
+
+            <h3>Conteo de letras</h3>
+            <canvas id="graficaLetras" height="200"></canvas>
+        </div>
+    </div>
+</body>
+
+<script src="../js/app.js"></script>
+
+</html>
