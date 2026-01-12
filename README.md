@@ -27,10 +27,9 @@ Es recomendable verificar que tanto .NET como Python están disponibles desde la
 1. Clonar el repositorio desde GitHub en el equipo local.
 2. Abrir el archivo de solución (`.sln`) con Visual Studio 2022.
 3. Verificar que el framework del proyecto esté configurado como **.NET 9.0**.
-4. Establecer el proyecto como proyecto de inicio (Startup Project).
-5. Ejecutar la aplicación utilizando IIS Express o el servidor integrado de ASP.NET Core.
+4. Ejecutar la aplicación utilizando https de ASP.NET Core.
 
-Una vez iniciado, la aplicación será accesible desde el navegador web mediante la dirección local proporcionada por Visual Studio.
+Una vez iniciado, la aplicación será accesible desde el navegador web mediante la dirección local proporcionada por Visual Studio. Una vez iniciada se mostrará la vista de index.html
 
 ---
 
