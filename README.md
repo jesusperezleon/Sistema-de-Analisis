@@ -39,17 +39,22 @@ El sistema se compone de cuatro partes principales que trabajan de forma coordin
 
 ---
 
-## 1️⃣ Script de análisis en Python
+## 1️⃣ Script de análisis en Python [Analizador.py](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/analizador.py)
 
 El script en Python es el encargado de realizar el procesamiento del texto.  
-Recibe el contenido a analizar como entrada y calcula diferentes métricas relacionadas con el texto, como el número de palabras, caracteres o la frecuencia de aparición de letras y palabras.
+Recibe el contenido a analizar como entrada y calcula las siguientes métricas relacionadas con el texto:
+* El número de palabras
+* El número de caracteres
+* El top 5 palabras que más aparecen
+* La frecuencia de aparición de letras en total y por letra.
+* La longitud media de las palabras
 
 Este script se ejecuta desde el backend mediante línea de comandos, lo que permite integrar Python con ASP.NET Core sin necesidad de librerías externas adicionales.  
 El resultado del análisis se devuelve en formato JSON, facilitando su posterior tratamiento por el backend.
 
 ---
 
-## 2️⃣ Backend ASP.NET Core
+## 2️⃣ Backend ASP.NET Core [AnalizaController.cs](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/Controllers/AnalizaController.cs)
 
 El backend está desarrollado con **ASP.NET Core (.NET 9)** y actúa como intermediario entre el frontend y el script de Python.
 
@@ -64,16 +69,14 @@ El backend expone una API REST sencilla que permite desacoplar la lógica de pro
 
 ---
 
-## 3️⃣ Modelo de datos
+## 3️⃣ Modelo de datos [Texto.cs](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/Models/Texto.cs)
 
 El modelo de datos define la estructura del contenido que se intercambia entre el frontend y el backend.  
 En este proyecto, el modelo representa el texto que el usuario desea analizar.
 
-El uso de modelos permite una correcta serialización y deserialización de los datos enviados en formato JSON, facilitando la comunicación entre las distintas capas del sistema.
-
 ---
 
-## 4️⃣ Frontend (wwwroot)
+## 4️⃣ Frontend [(wwwroot)](https://github.com/jesusperezleon/Sistema-de-Analisis/tree/master/Sistema%20de%20Analisis/wwwroot)
 
 El frontend es una interfaz web sencilla desarrollada con HTML y JavaScript.  
 Se sirve como contenido estático desde la carpeta `wwwroot`, aprovechando las capacidades nativas de ASP.NET Core para servir archivos estáticos.
@@ -100,16 +103,3 @@ El flujo de funcionamiento de la aplicación es el siguiente:
 6. El frontend muestra el análisis al usuario.
 
 ---
-
-## ✅ Consideraciones finales
-
-- La integración entre ASP.NET Core y Python se realiza de forma directa mediante ejecución de procesos.
-- El proyecto no depende de servicios externos ni bases de datos.
-- La arquitectura es sencilla y fácil de extender.
-- Está orientado a entornos educativos y de aprendizaje.
-
----
-
-## 👤 Autor
-
-Proyecto desarrollado utilizando **ASP.NET Core (.NET 9)** y **Python** como sistema de análisis de texto.
