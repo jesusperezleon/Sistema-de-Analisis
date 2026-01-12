@@ -25,7 +25,7 @@ Es recomendable verificar que tanto .NET como Python están disponibles desde la
 ### Instalación del proyecto
 
 1. Clonar el repositorio desde GitHub en el equipo local.
-2. Abrir el archivo de solución (`.sln`) con Visual Studio 2022.
+2. Abrir el archivo de solución (`Sistema de Analisis.sln`) con Visual Studio 2022.
 3. Verificar que el framework del proyecto esté configurado como **.NET 9.0**.
 4. Ejecutar la aplicación utilizando https de ASP.NET Core.
 
