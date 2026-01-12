@@ -39,7 +39,7 @@ El sistema se compone de cuatro partes principales que trabajan de forma coordin
 
 ---
 
-## 1️⃣ Script de análisis en Python [Analizador.py](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/analizador.py)
+## 1️⃣ Script de análisis en Python [(Analizador.py)](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/analizador.py)
 
 El script en Python es el encargado de realizar el procesamiento del texto.  
 Recibe el contenido a analizar como entrada y calcula las siguientes métricas relacionadas con el texto:
@@ -54,7 +54,7 @@ El resultado del análisis se devuelve en formato JSON, facilitando su posterior
 
 ---
 
-## 2️⃣ Backend ASP.NET Core [AnalizaController.cs](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/Controllers/AnalizaController.cs)
+## 2️⃣ Backend ASP.NET Core [(AnalizaController.cs)](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/Controllers/AnalizaController.cs)
 
 El backend está desarrollado con **ASP.NET Core (.NET 9)** y actúa como intermediario entre el frontend y el script de Python.
 
@@ -69,7 +69,7 @@ El backend expone una API REST sencilla que permite desacoplar la lógica de pro
 
 ---
 
-## 3️⃣ Modelo de datos [Texto.cs](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/Models/Texto.cs)
+## 3️⃣ Modelo de datos [(Texto.cs)](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/Models/Texto.cs)
 
 El modelo de datos define la estructura del contenido que se intercambia entre el frontend y el backend.  
 En este proyecto, el modelo representa el texto que el usuario desea analizar.
