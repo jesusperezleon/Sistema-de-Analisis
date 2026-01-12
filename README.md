@@ -29,7 +29,7 @@ Es recomendable verificar que tanto .NET como Python están disponibles desde la
 3. Verificar que el framework del proyecto esté configurado como **.NET 9.0**.
 4. Ejecutar la aplicación utilizando https de ASP.NET Core.
 
-Una vez iniciado, la aplicación será accesible desde el navegador web mediante la dirección local proporcionada por Visual Studio. Una vez iniciada se mostrará la vista de index.html
+Una vez iniciado, la aplicación será accesible desde el navegador web mediante la dirección local proporcionada por Visual Studio. Una vez iniciada se mostrará la vista de [index.html](https://github.com/jesusperezleon/Sistema-de-Analisis/blob/master/Sistema%20de%20Analisis/wwwroot/index.html)
 
 ---
 
